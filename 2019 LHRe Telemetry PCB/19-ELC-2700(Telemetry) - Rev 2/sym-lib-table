@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "19-ELC-2700(Telemetry)-rescue")(type Legacy)(uri "${KIPRJMOD}/19-ELC-2700(Telemetry)-rescue.lib")(options "")(descr ""))
+)
