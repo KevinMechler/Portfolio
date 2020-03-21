@@ -1,5 +1,7 @@
 # Let's Social Distance
 
+[*Please see original repo*](https://github.com/KevinMechler/Let-s-Social-Distance)
+
 A derivative of the "Let's Split" 40% split ortholinear keyboard originally made by [u/wootpatoot](https://www.reddit.com/user/wootpatoot/).
 
 
