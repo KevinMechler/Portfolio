@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "20-ELC-3-01-R1-(Telemetry-PCB)-rescue")(type Legacy)(uri "${KIPRJMOD}/20-ELC-3-01-R1 (Telemetry PCB)-rescue.lib")(options "")(descr ""))
+)

@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+LIBS:20-ELC-3-01-R1 (Telemetry PCB)-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "12 to 5V Switching Voltage Regulator Circuit"
+Date ""
+Rev "1"
+Comp "Longhorn Racing Electric"
+Comment1 "By Kevin Mechler"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LHRE_Component_Library:TPS5450 U?
+U 1 1 5D82DA5C
+P 5450 3200
+F 0 "U?" H 5450 3615 50  0000 C CNN
+F 1 "TPS5450" H 5450 3524 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias" H 5450 3200 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps5450-q1.pdf" H 5450 3200 50  0001 C CNN
+F 4 "Texas Instruments" H 5450 3200 50  0001 C CNN "Manufacturer"
+F 5 "TPS5450QDDARQ1" H 5450 3200 50  0001 C CNN "Part Number"
+F 6 " IC REG BUCK ADJUSTABLE 5A 8SOPWR" H 5450 3200 50  0001 C CNN "Description"
+F 7 "8SOIC POWERPAD" H 5450 3200 50  0001 C CNN "Package"
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3250 3000 0    50   Input ~ 0
+12V_clean
+$Comp
+L Device:C C?
+U 1 1 5D831F39
+P 3450 3150
+F 0 "C?" H 3565 3196 50  0000 L CNN
+F 1 "4.7uF" H 3565 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 3000 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+F 4 "0805" H 3450 3150 50  0001 C CNN "Package"
+F 5 "CAP CER 4.7UF 25V X7R 0805" H 3450 3150 50  0001 C CNN "Description"
+	1    3450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D832D21
+P 3900 3150
+F 0 "C?" H 4015 3196 50  0000 L CNN
+F 1 "4.7uF" H 4015 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3938 3000 50  0001 C CNN
+F 3 "~" H 3900 3150 50  0001 C CNN
+F 4 "CAP CER 4.7UF 25V X7R 0805" H 3900 3150 50  0001 C CNN "Description"
+F 5 "0805" H 3900 3150 50  0001 C CNN "Package"
+	1    3900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D83310E
+P 4350 3150
+F 0 "C?" H 4465 3196 50  0000 L CNN
+F 1 "0.01uF" H 4465 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 3000 50  0001 C CNN
+F 3 "~" H 4350 3150 50  0001 C CNN
+F 4 "CAP CER 0.01UF 25V X7R 0603" H 4350 3150 50  0001 C CNN "Description"
+F 5 "0603" H 4350 3150 50  0001 C CNN "Package"
+	1    4350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3000 3450 3000
+Wire Wire Line
+	3450 3000 3900 3000
+Connection ~ 3450 3000
+Wire Wire Line
+	3900 3000 4350 3000
+Connection ~ 3900 3000
+Wire Wire Line
+	4350 3000 5000 3000
+Connection ~ 4350 3000
+Wire Wire Line
+	3450 3300 3900 3300
+Wire Wire Line
+	4350 3300 3900 3300
+Connection ~ 3900 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5D834064
+P 3900 3400
+F 0 "#PWR?" H 3900 3150 50  0001 C CNN
+F 1 "GND" H 3905 3227 50  0000 C CNN
+F 2 "" H 3900 3400 50  0001 C CNN
+F 3 "" H 3900 3400 50  0001 C CNN
+	1    3900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3400 3900 3300
+Wire Wire Line
+	5000 3550 5000 3700
+Wire Wire Line
+	5000 3700 5200 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5D834C95
+P 5200 3700
+F 0 "#PWR?" H 5200 3450 50  0001 C CNN
+F 1 "GND" H 5205 3527 50  0000 C CNN
+F 2 "" H 5200 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 3700 5450 3700
+$Comp
+L Device:C C?
+U 1 1 5D835FCD
+P 6050 3100
+F 0 "C?" V 5798 3100 50  0000 C CNN
+F 1 "0.01uF" V 5889 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 2950 50  0001 C CNN
+F 3 "~" H 6050 3100 50  0001 C CNN
+F 4 "CAP CER 0.01UF 25V X7R 0603" H 6050 3100 50  0001 C CNN "Description"
+F 5 "0603" H 6050 3100 50  0001 C CNN "Package"
+	1    6050 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 3300 6200 3300
+Wire Wire Line
+	6200 3300 6200 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5D83734F
+P 6350 3500
+F 0 "#PWR?" H 6350 3250 50  0001 C CNN
+F 1 "GND" H 6355 3327 50  0000 C CNN
+F 2 "" H 6350 3500 50  0001 C CNN
+F 3 "" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3100 6200 3100
+Connection ~ 6200 3100
+$Comp
+L Device:L_Core_Iron L?
+U 1 1 5D837D30
+P 6500 3100
+F 0 "L?" V 6725 3100 50  0000 C CNN
+F 1 "15uH" V 6634 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 6500 3100 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/SRR1280A-150M-Bourns-datasheet-32036179.pdf" H 6500 3100 50  0001 C CNN
+F 4 "Bourns" H 6500 3100 50  0001 C CNN "Manufacturer"
+F 5 "SRR1280A-150M" H 6500 3100 50  0001 C CNN "Part Number"
+F 6 "FIXED IND 15UH 5.2A 28.5 MOHM" H 6500 3100 50  0001 C CNN "Description"
+F 7 "12mm Diode" H 6500 3100 50  0001 C CNN "Package"
+	1    6500 3100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 3100
+Wire Wire Line
+	6650 3100 6800 3100
+$Comp
+L Device:CP1 C?
+U 1 1 5D839193
+P 6800 3250
+F 0 "C?" H 6915 3296 50  0000 L CNN
+F 1 "330uF" H 6915 3205 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 6800 3250 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/10TPB330M-Panasonic-datasheet-61627562.pdf" H 6800 3250 50  0001 C CNN
+F 4 "Panasonic" H 6800 3250 50  0001 C CNN "Manufacturer"
+F 5 "10TPB330M" H 6800 3250 50  0001 C CNN "Part Number"
+F 6 "CAP TAN 330UF 10V X7R 7343" H 6800 3250 50  0001 C CNN "Description"
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 3100
+$Comp
+L Device:C C?
+U 1 1 5D83B96E
+P 7250 3250
+F 0 "C?" H 7365 3296 50  0000 L CNN
+F 1 "0.01uF" H 7365 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7288 3100 50  0001 C CNN
+F 3 "~" H 7250 3250 50  0001 C CNN
+F 4 "CAP CER 0.01UF 25V X7R 0603" H 7250 3250 50  0001 C CNN "Description"
+F 5 "0603" H 7250 3250 50  0001 C CNN "Package"
+	1    7250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3400 7000 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5D83C0D4
+P 7000 3400
+F 0 "#PWR?" H 7000 3150 50  0001 C CNN
+F 1 "GND" H 7005 3227 50  0000 C CNN
+F 2 "" H 7000 3400 50  0001 C CNN
+F 3 "" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 3400
+Wire Wire Line
+	6350 3200 6350 3100
+$Comp
+L Device:R R?
+U 1 1 5D83D925
+P 7700 3250
+F 0 "R?" H 7770 3296 50  0000 L CNN
+F 1 "10k" V 7700 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 3250 50  0001 C CNN
+F 3 "~" H 7700 3250 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 0603" H 7700 3250 50  0001 C CNN "Description"
+F 5 "0603" H 7700 3250 50  0001 C CNN "Package"
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D83DE10
+P 7700 3850
+F 0 "R?" H 7770 3896 50  0000 L CNN
+F 1 "3.16k" V 7700 3750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 3850 50  0001 C CNN
+F 3 "~" H 7700 3850 50  0001 C CNN
+F 4 "RES SMD 3.16K OHM 1% 0603" H 7700 3850 50  0001 C CNN "Description"
+F 5 "0603" H 7700 3850 50  0001 C CNN "Package"
+	1    7700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3500 6050 3500
+Wire Wire Line
+	6050 3500 6050 3700
+Wire Wire Line
+	6050 3700 7700 3700
+Wire Wire Line
+	7700 3400 7700 3700
+Connection ~ 7700 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5D83EEFA
+P 7700 4000
+F 0 "#PWR?" H 7700 3750 50  0001 C CNN
+F 1 "GND" H 7705 3827 50  0000 C CNN
+F 2 "" H 7700 4000 50  0001 C CNN
+F 3 "" H 7700 4000 50  0001 C CNN
+	1    7700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3100 8150 3100
+Connection ~ 7700 3100
+Text HLabel 8150 3100 2    50   Output ~ 0
+5V_OUT
+Connection ~ 7250 3100
+Wire Wire Line
+	7250 3100 7700 3100
+Wire Wire Line
+	6800 3100 7250 3100
+Wire Wire Line
+	7000 3400 7250 3400
+$Comp
+L Device:D_Schottky_ALT D?
+U 1 1 5D840AC1
+P 6350 3350
+F 0 "D?" V 6304 3429 50  0000 L CNN
+F 1 "40v 5A Schottky" V 6450 3050 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 6350 3350 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/NRVBS540T3G-ON-Semiconductor-datasheet-5320225.pdf" H 6350 3350 50  0001 C CNN
+F 4 "On Semiconductor" H 6350 3350 50  0001 C CNN "Manufacturer"
+F 5 "NRVBS540T3G " H 6350 3350 50  0001 C CNN "Part Number"
+F 6 "DIODE SCHOTTKY 40V 5A SMC" H 6350 3350 50  0001 C CNN "Description"
+F 7 "SMC" H 6350 3350 50  0001 C CNN "Package"
+	1    6350 3350
+	0    1    1    0   
+$EndComp
+NoConn ~ 5000 3150
+$EndSCHEMATC
