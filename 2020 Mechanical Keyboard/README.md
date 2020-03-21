@@ -1,18 +1,31 @@
-# Let's Social Distance - See other repo on my profile
+# Let's Social Distance
 
-A derivative of the "Let's Split"  40% split ortholinear keyboard originally made by /u/wootpatoot.
+A derivative of the "Let's Split" 40% split ortholinear keyboard originally made by [u/wootpatoot](https://www.reddit.com/user/wootpatoot/).
 
-![alt text](https://github.com/KevinMechler/Portfolio/blob/master/2019%20LHRe%20Telemetry%20PCB/19-ELC-2700(Telemetry)1.jpg)
 
-This was re-designed during my spring break that was extended by the covid-19 pandemic. The PCB silkscreen design features artisitic depictions of the malice that tainted our world.
+![alt text](https://github.com/KevinMechler/Portfolio/blob/master/2020%20Mechanical%20Keyboard/readme_resources/PCB_Front.PNG)
+
+![alt text](https://github.com/KevinMechler/Portfolio/blob/master/2020%20Mechanical%20Keyboard/readme_resources/PCB_Back.PNG)
+
+This was re-designed during my spring break that was extended by the COVID-19 pandemic.
+The PCB silkscreen design features artisitic depictions of the _malice_ that tainted our world.
 
 New Features:
-* support for a single encoder per PCB in the bottom left or right corner. Optional switch in encoder will be part of the key switch matrix.
-* status LED above the Pro-Micro on each half, controlled by the primary Pro-Micro. (data carried over TRRS cable)
-* minimal text and words on the silkscreen. The stripe of the diode goes towards the square pad. Look at the layout file for confirm diode placements
+* Support for a single encoder per PCB in the bottom left or right corner.
+
+    * Optional switch in encoder will be part of the key switch matrix.
+
+* Status LED above the Pro-Micro on each half, controlled by the primary Pro-Micro.
+
+    * Data is carried over TRRS cable
+
+* Minimal silkscreen text 
+
+    * Look at the layout file for confirmed diode placements
+    * The stripe of the diode goes towards the square pad.
 
 How to Assemble:
-* Link: https://github.com/nicinabox/lets-split-guide
+* [Let's Split Build Guide](https://github.com/nicinabox/lets-split-guide)
 
 How to Use the Encoders:
 * To be added when we figure this out.
