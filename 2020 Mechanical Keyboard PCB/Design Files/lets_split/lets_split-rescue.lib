@@ -1,0 +1,129 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 3PIN-lets_split-rescue
+#
+DEF 3PIN-lets_split-rescue J 0 40 Y Y 1 F N
+F0 "J" -50 200 60 H V C CNN
+F1 "3PIN-lets_split-rescue" -50 -200 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+T 900 -150 0 60 0 0 0 3PIN Normal 1 C C
+P 4 0 1 0 -150 150 0 150 0 -150 -150 -150 N
+X 1 1 200 100 200 L 50 50 1 1 I
+X 2 2 200 0 200 L 50 50 1 1 W
+X 3 3 200 -100 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# 6PIN-lets_split-rescue
+#
+DEF 6PIN-lets_split-rescue J 0 40 Y Y 1 F N
+F0 "J" -50 350 60 H V C CNN
+F1 "6PIN-lets_split-rescue" -50 -350 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+T 900 -150 0 60 0 0 0 6PIN Normal 1 C C
+P 4 0 0 0 -150 300 0 300 0 -300 -150 -300 N
+X 1 1 200 250 200 L 50 50 1 1 I
+X 2 2 200 150 200 L 50 50 1 1 W
+X 3 3 200 50 200 L 50 50 1 1 O
+X 4 4 200 -50 200 L 50 50 1 1 W
+X 5 5 200 -150 200 L 50 50 1 1 I
+X 6 6 200 -250 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# D-lets_split-rescue
+#
+DEF D-lets_split-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D-lets_split-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Diode_*
+ D-Pak_TO252AA
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+$ENDFPLIST
+DRAW
+P 2 0 1 6 -50 50 -50 -50 N
+P 3 0 1 0 50 50 -50 0 50 -50 F
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND-lets_split-rescue
+#
+DEF GND-lets_split-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-lets_split-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# HOLE-lets_split-rescue
+#
+DEF HOLE-lets_split-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "HOLE-lets_split-rescue" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+T 0 100 350 60 0 0 0 HOLE Normal 0 C C
+S -700 950 900 -500 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# SW_PUSH-lets_split-rescue
+#
+DEF SW_PUSH-lets_split-rescue SW 0 40 N N 1 F N
+F0 "SW" 150 110 50 H V C CNN
+F1 "SW_PUSH-lets_split-rescue" 0 -80 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+S -170 50 170 60 0 1 0 N
+P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
+X 1 1 -300 0 200 R 50 50 0 1 P I
+X 2 2 300 0 200 L 50 50 0 1 P I
+ENDDRAW
+ENDDEF
+#
+# TEST_1P-lets_split-rescue
+#
+DEF TEST_1P-lets_split-rescue W 0 30 N N 1 F N
+F0 "W" 0 270 50 H V C CNN
+F1 "TEST_1P-lets_split-rescue" 0 200 50 H V C CNN
+F2 "" 200 0 50 H V C CNN
+F3 "" 200 0 50 H V C CNN
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# VCC-lets_split-rescue
+#
+DEF VCC-lets_split-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "VCC-lets_split-rescue" 0 150 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
